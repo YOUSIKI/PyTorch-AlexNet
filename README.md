@@ -36,7 +36,7 @@ Please refer to [this page](https://github.com/fastai/imagenette) to download th
 
 Extract the `imagenette2` folder to `PyTorch-AlexNet/datasets/`.
 
-### Start training
+#### Start training
 
 Run the following command under `PyTorch-AlexNet/`.
 
@@ -55,7 +55,7 @@ python train.py --name myalexnet
 - `--dataset` the name of dataset, either `imagenet` or `imagenette`.
 - `--starting_epoch` the starting epoch, default 0, if set to a possitive integer, the starting_epoch-1 checkpoint will be loaded before training.
 
-### Learning rate
+#### Learning rate
 
 I found that 5e-3 is a nice learning rate for both batch normalization and local response normalization network. 
 The learning rate will automatically decrease during training. 
@@ -70,6 +70,10 @@ tensorboard --logdir log/myalexnet
 ```
 
 Remember that tensorboard and tensorflow should be installed before this.
+
+## Why this repo exists
+
+It's the team project for *算法设计与分析*.
 
 ## Credit
 
